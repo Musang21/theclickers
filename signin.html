@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+
+<html>
+<head>
+  <meta http-equiv="CONTENT-TYPE" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css">
+  <link rel="stylesheet" href="styleasset.css">
+  <title>login/admin</title>
+</head>
+<body>
+  <div class="form-admin-container">
+       <div class="admin-pos">
+         <img src="Clickerslogo.png" class="logo">
+         <div class="admin-text">Logn in</div>
+         <a class="asking" href="signup.html"><p class="forgot-password signin-text">You don't have an account?</p></a>
+       </div>
+    
+  <form onsubmit="return checkLogin(event)">
+      <label class="label-text" for="username">Username</label>
+    <div class="input-container">
+      <i class="ri-user-3-fill admin"></i>
+      <input class="input-text" type="text" placeholder="Username" name="username" id="username">
+    </div>
+    
+    <label class="label-text" for="password">Password</label>
+    <div class="input-container">
+      <i class="ri-lock-fill admin"></i>
+      <input class="input-text" type="password" placeholder="Password" name="password" id="password">
+      <i class="ri-eye-off-line"></i>
+      <i class="ri-eye-line close"></i>
+    </div>
+    <button type="submit" class="Login-admin">Log in</button>
+  </form>
+  
+    <div class="alert-container" id="error-message">
+      <img src="shield.gif" class="alert-construct">
+      <p class="alert-text">invalid username or password</p>
+      <button class="button-alert" onclick="errorclose()">Ok</button>
+    </div>
+    
+    <p class="forgot-password" onclick="alertclose()">Forgot password?</p>
+ 
+    <div class="alert-container" id="alerton">
+      <img src="Construc.gif" class="alert-construct">
+      <h3>Invalid Output</h3>
+      <p class="alert-text">Hold on, we keep building!</p>
+      <button class="button-alert" onclick="alertopen()">Ok</button>
+    </div>
+    
+    
+    
+    <script src="scriptasset.js">
+    
+    </script>
+    
+   <script>
+  let alertnotif = document.getElementById("alerton");
+
+  function alertclose() {
+  alertnotif.classList.add("open-alert");
+  }
+
+  function alertopen() {
+  alertnotif.classList.remove("open-alert");
+  }
+  </script>
+    
+</body>
+</html>

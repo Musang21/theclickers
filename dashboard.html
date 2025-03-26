@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RRMS</title>
+    <script src="script.js"></script>
+    <link rel="stylesheet" href="styleasset1.css">
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@4.5.0/fonts/remixicon.css" rel="stylesheet"/>
+</head>
+<body>
+    <nav class="navigation close">
+            <header>
+                <div class="header-sign">
+                 <span class="image-logo">
+                     <img src="Clickerslogo.png" alt="The Clickers Logo" class="pnlogo">
+                 </span>
+                 <div class="text-header-pos">
+                     <span class="text header-rrms">The</span>
+                     <span class="text header-pn">Clickers</span>
+                 </div>
+                </div>
+                <i class="ri-arrow-right-s-line icon-arrow"></i>
+            </header>
+        
+            <div class="menu-link">
+                <div class="menu-items">
+                    <ul>
+                        <li>
+                            <a href="">
+                                <i class="ri-home-4-line menu-icons"></i>
+                                <span class="text">Dashboard</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="ri-folder-line menu-icons"></i>
+                                <span class="text">My Survey</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="ri-feedback-line menu-icons"></i>
+                                <span class="text">Feedback</span>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="">
+                                <i class="ri-settings-3-line menu-icons"></i>
+                                <span class="text">Settings</span>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <ul>
+                    <li>
+                        <a href="index.html">
+                            <i class="ri-logout-box-line menu-icons"></i>
+                            <span class="text">Log out</span>
+                        </a>
+                    </li>
+                </ul>
+            </div>
+    </nav>
+    
+    <section class="dashboard">
+        <div class="dashboard-text">Dashboard</div>
+        <div class="dashboard-item1">
+            <span class="item">
+                <i class="ri-add-line icon"></i>
+                <span class="New">Create New Survey</span>
+            </span>
+            <span class="item">
+                <span class="text-item" >Respondent</span>
+                <span class="New">---0---</span>
+            </span>
+        </div>
+        <div class="dashboard-item2">
+            <span class="item2">
+             <div class="dashboard-text">Chart</div>
+             <img class="nothing" src="nothing.png">
+             <span class="nothing-text">Nothing to show.</span>
+            </span>
+        </div>
+    </section>
+   
+    <script>
+    const body = document.querySelector("body"),
+          toggle = document.querySelector(".icon-arrow"),
+          navigation = document.querySelector(".navigation");
+    
+    toggle.addEventListener("click", () =>{
+        navigation.classList.toggle("close");
+    });
+    </script>
+</body>
+</html>
