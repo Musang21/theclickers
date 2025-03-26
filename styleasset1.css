@@ -191,9 +191,10 @@ ul li a:hover
 }
 .dashboard-item2
 {
-  display:flex;
-  align-items:center;
-  margin-left:30%;
+  position:absolute;
+  top:50%;
+  left:40%;
+  transform:translate(-50%, -40%);
 }
 /* --------------------dashboard-end */
 
